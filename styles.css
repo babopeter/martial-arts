@@ -42,25 +42,37 @@ body {
 
 .hero h1 {
     margin: 0;
+    font-size: 48px;
+    font-weight: 800;
 }
 
 .hero {
     display: flex;
-    justify-content: space-around; /*not sure about this one */
+    justify-content: space-between;
     padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-content: center;
+    gap: 50px;
 }
 
 .hero.content {
     display: flex;
+    flex: 1; /*need to fix this - make it shrink like the header*/
     flex-direction: column;
     justify-content: flex-start;
     inline-size: 500px;
     overflow-wrap: break-word;
+    margin-left: 350px;
+    gap: 10px;
 }
 
 .hero img {
-    width: 600px;
+    width: 400px;
     height: auto;
+    padding-left: 0px;
+    margin-right: 350px;
 }
 
 .signup {
@@ -68,6 +80,6 @@ body {
     background-color: #3882f6;
     border-style: none;
     border-radius: 5px;
-    width: 75px;
+    width: 90px;
     height: 25px;
 }
