@@ -5,6 +5,7 @@ body {
 
 .header, .hero {
     background-color: #1f2937;
+    color: #e5e7eb;
 }
 
 .links a {
@@ -39,6 +40,34 @@ body {
     height: 50px;
 }
 
-h1 {
+.hero h1 {
     margin: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around; /*not sure about this one */
+    padding-top: 50px;
+}
+
+.hero.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+}
+
+.hero img {
+    width: 600px;
+    height: auto;
+}
+
+.signup {
+    color: white;
+    background-color: #3882f6;
+    border-style: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 25px;
 }
