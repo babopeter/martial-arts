@@ -17,13 +17,13 @@ body {
     font-size: 17px;
     color: #e5e7eb;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /*was space-around*/
     align-items: center;
 }
 
 .header.links {
     list-style-type: none;
-    margin: 0;
+    margin-right: 50px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -33,6 +33,7 @@ body {
 .logo img {
     max-width: 100%;
     height: auto;
+    margin-left: 50px;
 }
 
 .header.logo {
@@ -48,23 +49,25 @@ body {
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
+    /*flex-basis: 500px;*/
+    justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 0px;
     padding-right: 0px;
     align-content: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 .hero.content {
     display: flex;
-    flex: 1; /*need to fix this - make it shrink like the header*/
     flex-direction: column;
     justify-content: flex-start;
-    inline-size: 500px;
+    /*inline-size: 500px;*/
     overflow-wrap: break-word;
-    margin-left: 350px;
+    /*margin-left: 350px;*/
     gap: 10px;
 }
 
@@ -72,7 +75,7 @@ body {
     width: 400px;
     height: auto;
     padding-left: 0px;
-    margin-right: 350px;
+    /*margin-right: 350px;*/
 }
 
 .signup {
