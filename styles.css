@@ -142,3 +142,29 @@ body {
 .quote-author {
     text-align: right;
 }
+
+.cta-section { /*this doesn't shrink well */
+    display: flex;
+    justify-content: center;
+    background-color: #3882f6;
+    margin: 100px 300px;
+    padding: 20px 0px;
+    color: white;
+    border-radius: 10px;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.cta button {
+    color: white;
+    background-color: #3882f6;
+    border-radius: 5px;
+    border-color: white;
+    padding: 10px 30px;
+}
