@@ -50,7 +50,7 @@ body {
 .hero {
     display: flex;
     /*flex-grow: 1;*/
-    /*flex-shrink: 1;*/
+    flex-shrink: 1;
     /*flex-basis: 500px;*/
     justify-content: center;
     padding-top: 50px;
@@ -59,6 +59,7 @@ body {
     padding-right: 0px;
     align-content: center;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 .hero.content {
@@ -93,13 +94,28 @@ body {
     align-items: center;
 }
 
+.information h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
 .information.images {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.image img {
-    width: 400px;
+.image > img {
+    width: 250px;
     height: auto;
+    border-style: solid;
+    border-color: #3882f6;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.image > p {
+    text-align: center;
 }
