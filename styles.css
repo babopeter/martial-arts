@@ -168,3 +168,10 @@ body {
     border-color: white;
     padding: 10px 30px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1f2937;
+}
